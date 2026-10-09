@@ -12,7 +12,7 @@ int main() {
 }
 
 void aleatorio(int seed) {
-    int Nmax = 9;
+    int Nmax = 13;
     int c = 16807;
     int a;
     double y;
