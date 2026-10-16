@@ -1,0 +1,4 @@
+W3School - https://www.w3schools.com/cpp/cpp_vectors.asp
+StackOverflow - https://stackoverflow.com/questions/15704565/efficient-way-to-return-a-stdvector-in-c
+Deepseek - https://chat.deepseek.com/share/zmu2dg25qg2nmfyrt8
+Microsoft - https://learn.microsoft.com/en-us/cpp/cpp/header-files-cpp?view=msvc-170

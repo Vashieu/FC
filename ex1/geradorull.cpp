@@ -5,17 +5,17 @@
 using namespace std;
 
 
-vector<double> gerador(unsigned long long seed);
+vector<double> gerador(unsigned long long seed, int seq);
 
 double media(const vector<double>& y);
 
 double chi2(const vector<double>& y, int k);
 
-int seq = 1000;
 
 int main() {
     int seed = 4;
-    vector<double> y = gerador(seed);
+    int seq = 1000;
+    vector<double> y = gerador(seed, seq);
     double med  = media(y);
     double x = chi2(y, 100);
 
@@ -29,7 +29,7 @@ int main() {
     return 0;
 }
 
-vector<double> gerador(unsigned long long seed) {
+vector<double> gerador(unsigned long long seed, int seq) {
 
     const unsigned long long Nmax = 2147483647ULL;
     const unsigned long long c = 16807ULL;
