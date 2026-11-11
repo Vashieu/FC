@@ -20,7 +20,12 @@ double chi2(const vector<double>& y, int k);
 
 // main
 
-int main() {
+int main(int argc, char *argv[]) {
+
+for(int i = 1; i < argc; i++) {
+        cout << "Argumento " << i << ": " << argv[i] << endl;
+    }
+
     int k = 100; // numero de sub-intervalos para X^2
     unsigned long long seed;
     double raio;
@@ -63,6 +68,8 @@ int main() {
     cin >> raio;
 
     circulo(seed, Nmax, c, a, tamanho, raio);
+
+    system("gnuplot -e \"set terminal png; set output 'circulo.png'; set size ratio -1; set xrange [-1:1]; set yrange [-1:1]; plot 'circulo.dat' with points pt 7 ps 0.5\"");
 
     return 0;
 }
